@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const answer = document.getElementById("answer").value;
             const completed = document.getElementById("confirm").checked; // 체크박스 값 가져오기
-            const scriptURL = "YOUR_WEB_APP_URL";  // Google Apps Script URL
+            const scriptURL = "https://script.google.com/macros/s/AKfycbx4BaBEl6a5TFoxTmBhx4t1i1DO0sXQxZu2z1fOoVhS-r0DBNlbLeCF0euewL7LMoulWw/exec";  // Google Apps Script URL
 
             fetch(scriptURL, {
                 method: "POST",
