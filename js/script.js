@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
             event.preventDefault();
 
             const answer = document.getElementById("answer").value;
-            const scriptURL = "https://script.google.com/macros/s/AKfycbx4BaBEl6a5TFoxTmBhx4t1i1DO0sXQxZu2z1fOoVhS-r0DBNlbLeCF0euewL7LMoulWw/exec";  // Google Apps Script URL
+            const scriptURL = "YOUR_WEB_APP_URL";  // Google Apps Script URL
 
             fetch(scriptURL, {
                 method: "POST",
@@ -14,9 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
             })
             .then(response => response.text())
             .then(data => {
-                document.getElementById("message").innerText = "제출 완료!";
+                document.getElementById("message").innerText = "✅ 제출되었습니다!";
+                document.getElementById("answer").value = ""; // 입력칸 초기화
             })
-            .catch(error => console.error("Error:", error));
+            .catch(error => console.error("❌ Error:", error));
         });
     }
 });
