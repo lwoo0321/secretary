@@ -9,20 +9,20 @@
 <body>
     <div class="container">
         <h1>이행률 확인</h1>
-        <form id="login-form">
-            <label for="user-id">아이디:</label>
-            <input type="text" id="user-id" required>
-            
-            <label for="password">비밀번호:</label>
-            <input type="password" id="password" required>
-            
-            <button type="submit">로그인</button>
-        </form>
+        
+        <label for="user-email">Google 이메일 입력:</label>
+        <input type="email" id="user-email" required>
+        
+        <button onclick="checkProgress()">로그인</button>
+
+        <p id="message"></p>
         <p id="link-container" style="display: none;">
-            <a href="address" target="_blank">내 이행률 확인하기</a>
+            <a id="sheet-link" href="#" target="_blank">📊 내 이행률 확인하기</a>
         </p>
-	<button onclick="location.href='index.html'">🏠 메인 페이지로</button>
+
+        <button onclick="location.href='index.html'">🏠 메인 페이지로</button>
     </div>
+
     <script src="js/script.js"></script>
 </body>
 </html>
