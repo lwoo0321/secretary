@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제출하기</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>제출하기</h1>
+        <form id="submit-form">
+            <label for="answer">답안 입력:</label>
+            <textarea id="answer" name="answer" rows="5" required></textarea>
+            <div>
+                <input type="checkbox" id="confirm" required>
+                <label for="confirm">제출 내용 확인</label>
+            </div>
+            <button type="submit">제출</button>
+        </form>
+        <p id="message"></p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
